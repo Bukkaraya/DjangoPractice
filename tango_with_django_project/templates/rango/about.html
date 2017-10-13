@@ -1,0 +1,17 @@
+{% extends 'rango/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+    About
+{% endblock %}
+
+{% block body_block %}
+    <h1>About</h1><br>
+    <div>
+        <img src="{% static "images/note.jpg" %}" alt="Just another image"><br>
+        <br>
+        <img src="{{ MEDIA_URL }}dog.jpg" alt="Picture of a dog"><br><br>
+    </div>
+    <br>
+    <div>This page has been put together by <strong>{{ name }}</strong></div>
+{% endblock %}
